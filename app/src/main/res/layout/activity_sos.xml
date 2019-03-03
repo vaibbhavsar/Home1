@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SosActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOS Generated"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <Button
+        android:id="@+id/btn_ignor_sos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ignore SOS"/>
+
+    <Button
+        android:id="@+id/btn_accept_sos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accept SOS"/>
+    <Button
+        android:id="@+id/btn_navigate_sos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigate SOS Direction"/>
+</LinearLayout>

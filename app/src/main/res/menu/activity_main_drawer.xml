@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fir"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="@string/fir_submitted" />
+        <item
+            android:id="@+id/nav_sos"
+            android:icon="@drawable/ic_announcement_black_24dp"
+            android:title="@string/sos_alert" />
+        <item
+            android:id="@+id/nav_emergency_contacts"
+            android:icon="@drawable/ic_contacts_black_24dp"
+            android:title="@string/emergency_contacts" />
+
+    </group>
+
+    <item android:title="Personal">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_account_box_black_24dp"
+                android:title="@string/profile" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

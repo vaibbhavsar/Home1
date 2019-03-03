@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="crdma.genxcoders.com.disasterapp.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cv_reportdisaster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/train_accident"/>
+
+            </RelativeLayout>
+
+
+        </android.support.design.card.MaterialCardView>
+
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cv_helpline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_reportdisaster"
+            android:layout_margin="8dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+              <TextView
+                  android:id="@+id/hq_fir"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="HQ FIR HELPLINE"
+                  android:textSize="20sp"
+                  android:padding="2dp"
+                  android:layout_marginLeft="5dp"
+                  android:textStyle="bold"
+                  android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/hq_viewDirectory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hq_fir"
+                    android:text="View Directory"
+                    android:layout_marginLeft="5dp"
+
+                    android:padding="2dp"/>
+
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="1dp"
+                    android:layout_height="60dp"
+                   android:layout_toLeftOf="@id/tvCall"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/tvCall"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/ic_phone_black_24dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Call"
+
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+            </RelativeLayout>
+
+
+        </android.support.design.card.MaterialCardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<LinearLayout
+    android:id="@+id/ll_date_weather"
+    android:layout_below="@+id/cv_helpline"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cv_fir"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:cardElevation="5dp"
+            android:layout_below="@+id/cv_helpline"
+            android:layout_margin="8dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#f67c01"
+
+                    >
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:layout_gravity="center"
+                        android:padding="25dp"
+                        android:src="@drawable/ic_note_add_black_24dp"/>
+
+
+                    <View
+                        android:id="@+id/divider5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?android:attr/listDivider" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GENERATE FIR"
+
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/color_white"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+
+        </android.support.design.card.MaterialCardView>
+
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cv_date"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/cv"
+            android:layout_margin="8dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/tvMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="FEB"
+                    android:textColor="#000"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/tvDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="26,2019"
+
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="10:00am"
+
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+
+        </android.support.design.card.MaterialCardView>
+
+
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/cv_weather"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/cv"
+        android:layout_margin="8dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#398e3d"
+
+            >
+            <TextView
+                android:id="@+id/tvIcon"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="FEB"
+                android:textColor="#000"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/tvWeather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="@color/color_white"
+                android:paddingBottom="5dp"
+
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/tvClimate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLOUDY"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:textSize="14sp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/color_white"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.design.card.MaterialCardView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cv_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            app:cardElevation="3dp"
+            android:layout_below="@+id/ll_date_weather">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RECENT SOS"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+
+                />
+        </android.support.design.card.MaterialCardView>
+
+
+            <android.support.design.card.MaterialCardView
+                android:id="@+id/cv_sos1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                app:cardElevation="3dp"
+
+                android:layout_below="@+id/cv_event"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+
+
+                <TextView
+                    android:id="@+id/tvSOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Name of SOS"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_below="@+id/tvSOS"
+
+                    android:text="T No 123456 | Feb 26,2019"
+                   />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_remove_red_eye_black_24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </RelativeLayout>
+            </android.support.design.card.MaterialCardView>
+
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cv_sos2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="8dp"
+
+            android:layout_below="@+id/cv_sos1"
+
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvSOS2"
+                    android:textStyle="bold"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Name of SOS"
+                    android:textSize="16sp" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_below="@+id/tvSOS2"
+
+                    android:text="T No 123456 | Feb 26,2019"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_remove_red_eye_black_24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </RelativeLayout>
+        </android.support.design.card.MaterialCardView>
+
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

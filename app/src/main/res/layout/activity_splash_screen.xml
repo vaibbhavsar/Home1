@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/red"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="100dp"
+        android:foregroundGravity="center"
+        android:layout_gravity="center"
+        android:src="@drawable/railway" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_gravity="center"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:gravity="center_horizontal"
+        android:text="Central Railway's"
+        android:textColor="#ffff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        android:text="ARMAN"
+        android:layout_gravity="center"
+
+        android:textColor="#ffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        android:text="@string/accident_reporting_managent_applictaion"
+        android:textColor="#ffff"
+        android:textSize="27sp"
+         />
+
+</LinearLayout>
